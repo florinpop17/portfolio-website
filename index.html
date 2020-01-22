@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Portfolio Website</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/tailwind.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<!-- TODO: 
+	- improve design -->
+
+	<body class="bg-gray-200">
+		<nav
+			class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-purple-600"
+		>
+			<div
+				class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+			>
+				<div
+					class="w-full relative flex justify-between md:w-auto px-4 md:static"
+				>
+					<a
+						class="text-2xl text-center w-full font-bold leading-relaxed inline-block py-2 whitespace-no-wrap uppercase text-white"
+						href="#pablo"
+					>
+						John Dobbs
+					</a>
+				</div>
+				<div class="md:flex flex-grow items-center mt-5 md:mt-0">
+					<ul
+						class="flex flex-row w-full md:w-auto text-center list-none ml-auto"
+					>
+						<li class="nav-item flex-1 md:flex-none text-center">
+							<a
+								class="px-3 py-2 text-sm uppercase font-bold text-white hover:opacity-75"
+								href="#skills"
+							>
+								Skills
+							</a>
+						</li>
+						<li class="nav-item flex-1 md:flex-none text-center">
+							<a
+								class="px-3 py-2 text-sm uppercase font-bold text-white hover:opacity-75"
+								href="#projects"
+							>
+								Projects
+							</a>
+						</li>
+						<li class="nav-item flex-1 md:flex-none text-center">
+							<a
+								class="px-3 py-2 text-sm uppercase font-bold text-white hover:opacity-75"
+								href="#contact"
+							>
+								Contact
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<section class="bg-purple-500">
+			<div class="flex flex-col md:flex-row">
+				<div class="py-20 md:py-56 text-center flex-1">
+					<h1 class="text-4xl text-white">Hi, John here! 👋</h1>
+					<p class="text-2xl text-white">
+						I am a Frontend Developer and UI Designer.
+					</p>
+				</div>
+				<div class="flex-1 order-first md:order-last">
+					<img
+						class="w-full h-full object-cover"
+						src="https://media-public.canva.com/MADGyYFMsgU/4/screen.jpg"
+						alt="John Dobbs"
+					/>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-10" id="skills">
+			<div class="container text-center mx-auto">
+				<h2 class="text-4xl font-bold">Skills</h2>
+				<ul class="flex flex-wrap w-full">
+					<li class="flex-1 text-6xl text-red-500">
+						<i class="fab fa-html5"></i>
+					</li>
+					<li class="flex-1 text-6xl text-blue-500">
+						<i class="fab fa-css3"></i>
+					</li>
+					<li class="flex-1 text-6xl text-yellow-500">
+						<i class="fab fa-js"></i>
+					</li>
+					<li class="flex-1 text-6xl text-blue-300">
+						<i class="fab fa-react"></i>
+					</li>
+					<li class="flex-1 text-6xl text-green-500">
+						<i class="fab fa-node"></i>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="py-10" id="projects">
+			<div class="container text-center mx-auto">
+				<h2 class="text-4xl font-bold">Projects</h2>
+				<ul class="inline-flex mx-auto my-2">
+					<li class="mx-2">
+						<span
+							data-tag="all"
+							class="tag text-sm cursor-pointer font-semibold inline-block py-1 px-2 uppercase rounded text-purple-100 bg-purple-600 uppercase last:mr-0 mr-1 hover:text-purple-100 hover:bg-purple-600"
+						>
+							All
+						</span>
+					</li>
+					<li class="mx-2">
+						<span
+							data-tag="css"
+							class="tag text-sm cursor-pointer font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 uppercase last:mr-0 mr-1 hover:text-purple-100 hover:bg-purple-600"
+						>
+							CSS
+						</span>
+					</li>
+					<li class="mx-2">
+						<span
+							data-tag="react"
+							class="tag text-sm cursor-pointer font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 uppercase last:mr-0 mr-1 hover:text-purple-100 hover:bg-purple-600"
+						>
+							React
+						</span>
+					</li>
+					<li class="mx-2">
+						<span
+							data-tag="node"
+							class="tag text-sm cursor-pointer font-semibold inline-block py-1 px-2 uppercase rounded text-purple-600 bg-purple-200 uppercase last:mr-0 mr-1 hover:text-purple-100 hover:bg-purple-600"
+						>
+							Node
+						</span>
+					</li>
+				</ul>
+				<div class="flex flex-wrap mt-6">
+					<div class="project w-1/2 md:w-1/3 h-64 p-2" data-tags="css,react">
+						<img
+							class="w-full h-full object-cover"
+							src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2702&q=80"
+							alt="project"
+						/>
+					</div>
+					<div class="project w-1/2 md:w-1/3 h-64 p-2" data-tags="node">
+						<img
+							class="w-full h-full object-cover"
+							src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+							alt="project"
+						/>
+					</div>
+					<div class="project w-1/2 md:w-1/3 h-64 p-2" data-tags="css">
+						<img
+							class="w-full h-full object-cover"
+							src="https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80"
+							alt="project"
+						/>
+					</div>
+					<div
+						class="project w-1/2 md:w-1/3 h-64 p-2"
+						data-tags="css,react,node"
+					>
+						<img
+							class="w-full h-full object-cover"
+							src="https://images.unsplash.com/photo-1545239351-ef35f43d514b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80"
+							alt="project"
+						/>
+					</div>
+					<div class="project w-1/2 md:w-1/3 h-64 p-2" data-tags="react,node">
+						<img
+							class="w-full h-full object-cover"
+							src="https://images.unsplash.com/photo-1546795729-f3a5d42087f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+							alt="project"
+						/>
+					</div>
+					<div class="project w-1/2 md:w-1/3 h-64 p-2" data-tags="css,node">
+						<img
+							class="w-full h-full object-cover"
+							src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1386&q=80"
+							alt="project"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="py-10" id="contact">
+			<div class="container text-center mx-auto">
+				<h2 class="text-4xl font-bold">Contact</h2>
+				<div class="bg-purple-500 p-4 rounded shadow-md text-left">
+					<div class="flex">
+						<div class="mb-3 mr-2 pt-0 flex-1">
+							<label class="text-lg inline-block mb-2 text-white">Name:</label>
+							<input
+								type="text"
+								placeholder="Name"
+								class="px-3 py-3 placeholder-gray-500 text-gray-900 bg-white rounded text-md shadow outline-none focus:outline-none focus:shadow-outline w-full"
+							/>
+						</div>
+						<div class="mb-3 ml-2 pt-0 flex-1">
+							<label class="text-lg inline-block mb-2 text-white">Email:</label>
+							<input
+								type="email"
+								placeholder="Email"
+								class="px-3 py-3 placeholder-gray-500 text-gray-900 bg-white rounded text-md shadow outline-none focus:outline-none focus:shadow-outline w-full"
+							/>
+						</div>
+					</div>
+					<div class="mb-3 pt-0">
+						<label class="text-lg inline-block mb-2 text-white">Message:</label>
+						<textarea
+							placeholder="Message"
+							class="px-3 py-3 placeholder-gray-500 text-gray-900 bg-white rounded text-md shadow outline-none focus:outline-none focus:shadow-outline w-full"
+						></textarea>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="bg-purple-900 text-center py-5">
+			<p class="text-xl text-white">
+				Build with
+				<i class="fas fa-heart text-red-500"></i>
+				by
+				<span class="font-bold">John Dobbs</span>
+			</p>
+		</footer>
+
+		<script src="script.js"></script>
+	</body>
+</html>
